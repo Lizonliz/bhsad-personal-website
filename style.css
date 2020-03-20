@@ -1,0 +1,354 @@
+html{
+  max-width: 100vw;
+  overflow-x: hidden;
+  min-height: 100%;
+}
+
+body{
+  overflow-x: hidden;
+  position: relative;
+}
+
+.wrapper {
+    display: flex;
+    width: 100%;
+}
+
+.one {
+    background: rgba(196, 196, 196, 0.3);
+    width: 30%;
+}
+
+.two {
+    margin-top: 50px;
+    background-color: rgb(255, 255, 255);
+    width: 50%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.three {
+    background-color: rgb(255, 255, 255);
+    width: 20%;
+}
+
+.infotext{
+   font-family: Arial, Helvetica, sans-serif;
+   font-style: normal;
+   font-weight: normal;
+   font-size: 12px;
+   line-height: 14px;
+   margin-right: 61px;
+   margin-top: 30px;
+
+}
+.frame {
+    border: 1px solid black;
+    width: 70%;
+    height: 100%;
+    margin-bottom: 50px;
+}
+
+.toolbar {
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 21px;
+    margin-left: 50px;
+    margin-top: 43px;
+}
+.workspace {
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 21px; 
+    margin-bottom: 30px;
+}
+.info {
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 21px; 
+    margin-top: 40px;  
+}
+
+.dropdown {
+    width: 313px;
+    height: 37px;
+    margin-left: 50px;
+    margin-top: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    line-height: 16px;
+    border-radius: 0%;
+}
+
+.dropdown select {
+  background-color: rgb(203, 203, 203);
+  color: rgb(0, 0, 0);
+  padding: 12px;
+  width: 313px;
+  height: 44px;
+  border: 1px solid black;
+  font-size: 14px;
+  line-height: 16px;
+}
+.artwork1{
+  margin-bottom: 17px;
+
+}
+
+.artwork6{
+  margin-top: 17px;
+}
+
+.hello{
+ font-family: Arial, Helvetica, sans-serif;
+ font-weight: 500;
+ font-size: 18px;
+ line-height: 26px;
+ text-align: center;
+ letter-spacing: 0.02em;
+ width: 60%;
+ padding-left: 20%;
+ padding-right: 20%;
+ padding-top: 60%;
+ position: relative;
+ align-items: center;
+}
+
+.art-body {
+  margin-top: 39px;
+  width: 100%;
+  max-width: 338px;
+  margin-left: 50px;
+  margin-right: auto;
+}
+
+.art-wrapper {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  justify-content: space-between;
+}
+
+.art-column-1 {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  -ms-flex-direction: column;
+  -o-flex-direction: column;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.art-column-2 {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  -ms-flex-direction: column;
+  -o-flex-direction: column;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.one .art-slider-list ul {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  justify-content: center;
+  margin-right: 130px;
+}
+
+.one .art-slider-list li {
+  list-style: none;
+}
+
+.one .art-slider-list button {
+  list-style: none;
+}
+
+.slick-dots li button {
+    margin-left: 5px;
+    padding: 0;
+    margin-right: 5px;
+    font-size: 0;
+    width: 10px;
+    height: 10px;
+    border: 0;
+    border-radius: 50%;
+    background-color: #C4C4C4;
+    text-decoration: none;
+    outline: none;
+}
+
+.slick-dots li button:hover {
+  cursor: pointer;
+}
+
+.slick-dots .slick-active button {
+  -webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+  box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+}
+
+.art-slider-list {
+  min-height: 600px;
+  display: none;
+}
+
+.active {
+  display: block;
+}
+
+.top-stat {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+}
+
+.intention {
+  font-family: Ubuntu;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 32px;
+  text-align: center;
+  color: #000000;
+}
+
+.game {
+  font-family: Ubuntu;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18px;
+  text-align: center;
+  color: #000000;
+}
+
+.freedom {
+  font-family: Ubuntu;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 21px;
+  line-height: 24px;
+  text-align: center;
+  color: #000000;
+}
+
+.artwork8 {
+  margin-top: 30px;
+}
+
+.artwork11 {
+  width: 300px;
+  height: 200px;
+  padding-top: 20px;
+}
+
+.artwork12 {
+  width: 160px;
+  height: 230px;
+  padding-bottom: 12px;
+  margin-bottom: 20px;
+}
+
+.artwork13 {
+  
+  width: 148px;
+  height: 202px;
+ left: 240px;
+ top: 170px;
+}
+
+.artwork14{
+  width: 160px;
+}
+
+.artwork15 {
+  width: 300px;
+  height: 200px;
+  padding-top: 20px;
+}
+
+.intention {
+  font-style: normal;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 32px; 
+}
+
+
+
+.game{
+  font-style: normal;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  font-size: 21 px;
+  line-height: 18px;
+  padding-right: 180px;
+  padding-top: 10px;
+  
+}
+
+.freedom1 {
+  height: 20px;
+  left: 255px;
+  top: 197px;
+  
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 21px;
+  line-height: 24px;
+  text-align: center;
+}
+
+.action {
+ padding-right: 200px;
+ padding-top: 40px;
+  
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 41px;
+  text-align: center;
+  
+  color: #000000;
+  
+  transform: rotate(6.34deg);
+}
+.reasoning  {
+
+  
+  
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+
+}
