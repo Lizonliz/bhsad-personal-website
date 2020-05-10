@@ -6,307 +6,221 @@
 		<title>Document</title>
 		<link rel="stylesheet" href="normalize.css">
 		<link rel="stylesheet" href="libs/slick.css">
+		<link rel="stylesheet" href="jquery-ui.min.css">
 		<link rel="stylesheet" href="style.css">
 </head>
-<body>
-	<div class="wrapper">
-		<div class="one">
-			<div class="toolbar">
-					Tool bar
+<body class="capture widget" id="widget">
+	<div class="site-content-wrapper">
+			<div class="content-mobile">
+				<div class="mobile-body">К сожалению ресурс не доступен с мобильных устройств, пожалуйста зайдите на сайт с другого устройства</div>
 			</div>
-			<div class="dropdown"> 
-				<select class="select">
-					<option value="1">Visual elements &imagery</option>
-					<option value="2">Statements</option>
-				
-				</select>
-			</div>
-			<div class="art-slider-list active" data-item="1">
-				<div class="art-item">
-					<div class="art-body">
-						<div class="art-wrapper">
-							<div class="art-column-1">
-								<div class="artwork1">
-										<img src="assets/1.jpg" alt="фото">
-								</div>
-								<div class="artwork4">
-										<img src="assets/4.jpg" alt="фото">
-								</div>
-							</div>
-							<div class="art-column-2">
-								<div class="artwork2">
-										<img src="assets/2.jpg" alt="фото">
-								</div>
-								<div class="artworks3">
-									<img src="assets/3.jpg" alt="фото">
-								</div>
-								<div class="artwork5">
-										<img src="assets/5.jpg" alt="фото">
-								</div>
-							</div>
-						</div>
-						<div class="artwork6">
-							<img src="assets/6.jpg" alt="фото">
-						</div>
+			<div class="content-window">
+				<div class="header">
+					<div class="toolbar">
+							Tool bar
+					</div>
+					<div class="workspace">
+							Work space
+					</div>
+					<div class="info">
+						Info
 					</div>
 				</div>
-				<div class="art-item">
-					<div class="art-body">
-						<div class="art-wrapper">
-							<div class="art-column-1">
-								<div class="artwork1">
-										<img src="assets/7.jpg" alt="фото">
+				<div class="wrapper">
+					<div class="one">
+						<div class="left-panel">
+							<div class="two">
+								<div class="two-header">
+									<span class="two-header-circle"></span>
+									<span class="two-header-circle"></span>
+									<span class="two-header-circle"></span>
 								</div>
-								<div class="artwork4">
-										<img src="assets/9.png" alt="фото">
-								</div>
-							</div>
-							<div class="art-column-2">
-								<div class="artwork8">
-										<img src="assets/8.jpg" alt="фото">
-								</div>
-								
-								<div class="artwork10">
-										<img src="assets/10.jpg" alt="фото">
+								<div class="frame" id="droppable">
+									<div class="hello">
+											Hi, there! Drag something from left colum to careate your artwork  
+									</div>
 								</div>
 							</div>
-						</div>
-						<div class="artwork11">
-							<img src="assets/11.jpg" alt="фото">
-						</div>
-					</div>
-				</div>
-				<div class="art-item">
-					<div class="art-body">
-						<div class="art-wrapper">
-							<div class="art-column-1">
-								<div class="artwork12">
-										<img src="assets/12.jpg" alt="фото">
-								</div>
-								<div class="artwork14">
-										<img src="assets/14.jpg" alt="фото">
+							<div class="art-item">
+								<div class="art-body">
+									<div class="art-wrapper">
+										<div class="art-column-2">
+											<div class="artwork2">
+												<img src="assets/2.jpg" class="js--item-active draggable" alt="фото" data-info="Sketch 2018">
+											</div>
+											<div class="artwork3">
+												<div class="line-text draggable js--item-active" data-info="Many of my works are intrinsically focused towards interacting with the viewer. Most significantly the web design pieces such as websites are very interactive in their nature and are created to grasp attention of the consumer through nonverbal communication and movement of objects on the work. Through this level of fluidity, a connection with the viewer is established and an idea of what the work is supposed to be and represent is conveyed. This is one of my most used concepts for establishing a path to understanding my ideas and concepts that I use to create the piece. Thus, this very project is a reflection of my love for interaction and collective input into the finished work as it is, in a way, the very idea of creating and interacting on a level with the artist.">Interaction</div>
+											</div>
+											<div class="artwork5">
+												<img src="assets/5.jpg" class="js--item-active draggable" alt="фото" data-info="Poster as an art piece allows the designer not to only inform the audience about some kind of event, but also to do far more than that. Nowadays it became a ‘statement’ and individual type of artwork by itself. It allows to intrigue the viewer, make them think about what they have seen and to interpret the context how they feel to.">
+											</div>
+										</div>
+										<div class="art-column-1">
+											<div class="artwork1">
+													<img src="assets/1.jpg" class="js--item-active draggable" alt="фото" data-info="Poster as an art piece allows the designer not to only inform the audience about some kind of event, but also to do far more than that. Nowadays it became a ‘statement’ and individual type of artwork by itself. It allows to intrigue the viewer, make them think about what they have seen and to interpret the context how they feel to. ">
+											</div>
+											<div class="artwork4">
+												<img src="assets/4.jpg" class="js--item-active draggable" alt="фото" data-info="Infographics, on other hand, serves as only an informative tool. It does not have any ambiguous meaning to it. Designer role in general here is an ability to narrow down the huge piles of information to something concrete. It certainly makes the life easier and in many cases.">
+											</div>
+										</div>
+									</div>
+									<div class="artwork6">
+										<img src="assets/6.jpg" class="js--item-active draggable" alt="фото" data-info="Infographics, on other hand, serves as only an informative tool. It does not have any ambiguous meaning to it. Designer role in general here is an ability to narrow down the huge piles of information to something concrete. It certainly makes the life easier and in many cases.">
+									</div>
+									<div class="artwork7">
+										<div class="line-text draggable js--item-active" data-info="When I start to create a piece of work it is not due to a singular piece of media that has inspired me. When surely there is a single catalyst that could be traced as the starting point during the process of any creation, I pull elements of meaning from many cultural aspects in our society. I am often influenced heavily by music and tele media as those create the most powerful personal connection with the viewer and are very emotionally charged. This creates a very good point of reference for the consumers of my work and allows for a better, more unique understanding of it. These aspects of inspiration are layered upon each other and create a new and complex tapestry to be enjoyed.">Multi layered</div>
+										<div class="line-text draggable js--item-active" data-info="There are some artists out there that pick up a brush or a mouse and let their inspiration freely flow out onto the page without any predisposition before beginning the process. These artists do not create a piece with a deliberate idea, but rather project feelings and subconscious emotions onto the metaphorical canvass. It is surely one way of creating a product but not the one I prefer to use. This method does not allow for fine details to be perfected and tweaked as the action of doing so will undermine the entire project. I focus actively and consciously on the placement of elements and achieve balance not through free flow but through discipline and symmetry. Often methodical and thought out solutions or compositions seem pleasant and inviting to the viewer and allow for greater appreciation of work than a free waterfall of ideas.">Deliberate</div>
+									</div>
+									<div class="art-wrapper">
+										<div class="art-column-2">
+											<img src="assets/16.jpg" class="js--item-active draggable mb-10" alt="фото" data-info="Poster as an art piece allows the designer not to only inform the audience about some kind of event, but also to do far more than that. Nowadays it became a ‘statement’ and individual type of artwork by itself. It allows to intrigue the viewer, make them think about what they have seen and to interpret the context how they feel to.">
+											<img src="assets/17.jpg" class="js--item-active draggable" alt="фото" data-info="Personal experiences and background I truly believe that the work which designer produces is a symbiosis of their previous life experience and cultural background. Due to that in my works I imply a lot of personal context in way or another. As an example, one project of mine called ‘A book about the book’ the whole research was mainly based on looking into family photo archives and using those as an imagery source for the layout. Moreover, the book I was referencing was, again, family owned primary dictionary. To my point of view such a personal approach has built a strong base for a project and gave me a chance to produce way more complicated and deliberate piece.">
+										</div>
+										<div class="art-column-1">
+											<img src="assets/12.jpg" class="js--item-active draggable" alt="фото" data-info="Recently I experienced the new approach of production. I have touched a field which I was avoiding for a while and it is a collaborative design. It surprisingly opened to me completely new borders, where two perspectives and multiple ideas came into one. It is exciting how two completely opposite design approaches, underlined in a debate of graphic designers Wim Crouwel and Jan van Toorn, came together and gave birth to an open space project.">
+											<div class="line-text draggable js--item-active" data-info="As there is currently a lot of societal discourse taking place around us it is impossible to avoid letting it trickle down through one’s work. This is a reality that many refuse to acknowledge and pretend like politics and society does not have place in their art. For me there was always a deeper layer vivid in my work that is deeply intertwined with the current dynamic of culture around me. Be it reminiscing about the past events or commenting of current situations it always inspires me to create an idea that I could then take up to discussion through the power of public forum of opinions.">Socially engaging</div>
+											<div class="line-text draggable js--item-active" data-info="A lot of my work focuses on social issues and provides political and cultural commentary. This, in its nature cannot be fulfilled without provoking a strong reaction from people. The purpose of socially engaging with an audience is to bring out their opinions about the topic, otherwise any attempt would fail. This engagement nowadays is seen as provocative due to the sensitive nature of people’s opinions and therefore sprouts a discussion on the level which was intended in my work in the first place.">Provocative</div>
+										</div>
+									</div>
+									<div class="artwork8">
+										<img src="assets/15.jpg" class="js--item-active draggable" alt="фото" data-info="Clothes that you wear reflect your personality and make statement about who you are. That is why some of the works which I produce are connected to clothes and wearable items. Of course, they are not treated as fashion designers would threat them: I don’t touch the form but rather make the personal ‘statement’ distinct and seen in a text or visual form on the item.">
+									</div>
+									<div class="artwork7 mb-10">
+										<div class="line-text draggable js--item-active" data-info="Due to the nature of some of my work organization is required to allow for clear delivery of my message that I intended to place sub contextually. This take form of grids and layout patterns and allows the viewer to clearly decipher and analyse the data which I conveyed to create a response. This is clearly visible in my data driven work and has heavily influenced me in my poster projects. This organization allows me to have structure often when the structure of the influences or topics is not present and collect chaos into an impactful package.">Organized</div>
+										<div class="line-text draggable js--item-active" data-info="Similar to the art works that are collected in this library, I strive to create a conveyable idea through imagery. However, this idea does not necessarily have to be unique and unilateral, but rather subjective to interpretation and open to be seen from different points of view and opinions. Whether predisposed to a certain viewpoint or blissfully unaware of the meaning anyone can derive some message from the work that I like to present to them in my projects.">Ambiguous</div>
+									</div>
+									<div class="art-wrapper bg-white">
+										<div class="art-column-2">
+											<div class="artwork2">
+												<img src="assets/8.jpg" class="js--item-active draggable" alt="фото" data-info="Personal experiences and background I truly believe that the work which designer produces is a symbiosis of their previous life experience and cultural background. Due to that in my works I imply a lot of personal context in way or another. As an example, one project of mine called ‘A book about the book’ the whole research was mainly based on looking into family photo archives and using those as an imagery source for the layout. Moreover, the book I was referencing was, again, family owned primary dictionary. To my point of view such a personal approach has built a strong base for a project and gave me a chance to produce way more complicated and deliberate piece.">
+											</div>
+											<div class="artwork5">
+												<img src="assets/10.jpg" class="js--item-active draggable" alt="фото" data-info="Many of my works are intrinsically focused towards interacting with the viewer. Most significantly the web design pieces such as websites are very interactive in their nature and are created to grasp attention of the consumer through nonverbal communication and movement of objects on the work. Through this level of fluidity, a connection with the viewer is established and an idea of what the work is supposed to be and represent is conveyed. This is one of my most used concepts for establishing a path to understanding my ideas and concepts that I use to create the piece. Thus, this very project is a reflection of my love for interaction and collective input into the finished work as it is, in a way, the very idea of creating and interacting on a level with the artist.">
+											</div>
+										</div>
+										<div class="art-column-1">
+											<div class="artwork1">
+													<img src="assets/7.jpg" class="js--item-active draggable" alt="фото" data-info="Personal experiences and background I truly believe that the work which designer produces is a symbiosis of their previous life experience and cultural background. Due to that in my works I imply a lot of personal context in way or another. As an example, one project of mine called ‘A book about the book’ the whole research was mainly based on looking into family photo archives and using those as an imagery source for the layout. Moreover, the book I was referencing was, again, family owned primary dictionary. To my point of view such a personal approach has built a strong base for a project and gave me a chance to produce way more complicated and deliberate piece.">
+											</div>
+											<div class="artwork4">
+												<img src="assets/9.png" class="js--item-active draggable" alt="фото" data-info="Many of my works are intrinsically focused towards interacting with the viewer. Most significantly the web design pieces such as websites are very interactive in their nature and are created to grasp attention of the consumer through nonverbal communication and movement of objects on the work. Through this level of fluidity, a connection with the viewer is established and an idea of what the work is supposed to be and represent is conveyed. This is one of my most used concepts for establishing a path to understanding my ideas and concepts that I use to create the piece. Thus, this very project is a reflection of my love for interaction and collective input into the finished work as it is, in a way, the very idea of creating and interacting on a level with the artist.">
+											</div>
+										</div>
+									</div>
+									<div class="artwork10 bg-white">
+										<img src="assets/11.jpg" class="js--item-active draggable" alt="фото" data-info="Clothes that you wear reflect your personality and make statement about who you are. That is why some of the works which I produce are connected to clothes and wearable items. Of course, they are not treated as fashion designers would threat them: I don’t touch the form but rather make the personal ‘statement’ distinct and seen in a text or visual form on the item.">
+									</div>
 								</div>
 							</div>
-							<div class="art-column-2">
-								<div class="artwork13">
-										<img src="assets/16.jpg" alt="фото">
+			<!-- 				<div class="art-item">
+								<div class="art-body">
+									<div class="art-wrapper">
+										<div class="art-column-1">
+											<div class="artwork1">
+													<img src="assets/7.jpg" alt="фото">
+											</div>
+											<div class="artwork4">
+													<img src="assets/9.png" alt="фото">
+											</div>
+										</div>
+										<div class="art-column-2">
+											<div class="artwork8">
+													<img src="assets/8.jpg" alt="фото">
+											</div>
+											
+											<div class="artwork10">
+													<img src="assets/10.jpg" alt="фото">
+											</div>
+										</div>
+									</div>
+									<div class="artwork11">
+										<img src="assets/11.jpg" alt="фото">
+									</div>
 								</div>
+							</div>
+							<div class="art-item">
+								<div class="art-body">
+									<div class="art-wrapper">
+										<div class="art-column-1">
+											<div class="artwork12">
+													<img src="assets/12.jpg" alt="фото">
+											</div>
+											<div class="artwork14">
+													<img src="assets/14.jpg" alt="фото">
+											</div>
+										</div>
+										<div class="art-column-2">
+											<div class="artwork13">
+													<img src="assets/16.jpg" alt="фото">
+											</div>
 
-								<div class="artwork17">
-									<img src="assets/17.jpg" alt="фото">
+											<div class="artwork17">
+												<img src="assets/17.jpg" alt="фото">
+										</div>
+											
+										</div>
+									</div>
+									<div class="artwork15">
+										<img src="assets/15.jpg" alt="фото">
+									</div>
+								</div>
 							</div>
-								
-							</div>
-						</div>
-						<div class="artwork15">
-							<img src="assets/15.jpg" alt="фото">
+							<div class="art-item">
+								<div class="art-body">
+									<div class="art-wrapper">
+										<div class="art-column-1">
+											<div class="artwork1">
+												<div class="intention">intention</div>
+											</div>
+											<div class="artwork2">
+												<div class="exploration">exploration</div>
+											</div>
+										</div>
+									</div>
+										<div class="art-column-2">
+											<div class="artwork2">
+													<div class="game">game</div>
+											</div>
+											<div class="artworks3">
+												<div class="freedom1">freedom</div>
+											</div>
+											<div class="artwork5">
+												<div class="action">interaction</div>
+											</div>
+										</div>
+									<div class="artwork6">
+										<div class="reasoning ">reasoning </div>	
+									</div>
+								</div>
+							</div> -->
 						</div>
 					</div>
-				</div>
-			</div>
-			<div class="art-slider-list" data-item="2">
-				<div class="art-item">
-					<div class="art-body">
-						<div class="art-wrapper">
-							<div class="art-column-1">
-								<div class="artwork1">
-										<div class="intention">intention</div>
-								</div>
-
-								class="artwork2">
-										<div class="exploration">exploration</div>
-								</div>
-
-								<div class="artwork4">
-										
+						<div class="three">
+							<div class="text-container">
+								<div class="infotext">
+									Modernism era started with the last two decades of the nineteenth century as a result of enlightening and radical change in the commercial industry. As the ideological movement it originated with the rejection of all the previously stated beliefs about traditional forms of art, literature, religious faith, philosophy, and social organization. By the 1970s the ‘modern era was drawing to close’ because it was ‘no longer relevant in an immerging postindustrial society’ and due to emerging of new era of postmodernism in history of art. (Meggs, 1998)
+									However, the modernists’ approach to work hasn’t been ignored by the practitioners of the field completely. Moreover, according to “The Cambridge Companion to Modernism” the “understanding of a major cultural episode” has been changing and updating over the recent years with the accruing of ‘more ambitious acts of contextualization’. Nowadays, we might have more Modernism, as well as more flexible way to understanding and interpreting it. Thus, the overarching theory I wanted to put forward in this work is the idea of how the modernism approach is still used in various projects, for instance, the web design and UX design practices.
+									
+									For better understanding of the above stated thesis it is relevant to look more deeply into the origins of Modernism. Modernism is an ideological art movement that has appeared in the late 19th century with the skyrocketing technological progress and development of the ‘‘enlightenment period’’. Modernism corresponds to “enlightenment” concept in English. Modern word based on 
 								</div>
 							</div>
-							<div class="art-column-2">
-								<div class="artwork2">
-										<div class="game">game</div>
-								</div>
-								<div class="artworks3">
-									<div class="freedom1">freedom</div>
-								</div>
-								<div class="artwork5">
-									<div class="action">interaction</div>
-								</div>
-							</div>
-						</div>
-						<div class="artwork6">
-							<div class="reasoning ">reasoning </div>
+							<div class="save-info">Click the button to save your artwork</div>
 						</div>
 					</div>
-				</div>
-				<div class="art-item">
-					<div class="art-body">
-						<div class="art-wrapper">
-							<div class="art-column-1">
-								<div class="artwork1">
-										<img src="assets/1.jpg" alt="фото">
-								</div>
-								<div class="artwork4">
-										<img src="assets/4.jpg" alt="фото">
-								</div>
-							</div>
-							<div class="art-column-2">
-								<div class="artwork2">
-										<img src="assets/2.jpg" alt="фото">
-								</div>
-								<div class="artworks3">
-									<img src="assets/3.jpg" alt="фото">
-								</div>
-								<div class="artwork5">
-										<img src="assets/5.jpg" alt="фото">
-								</div>
-							</div>
-						</div>
-						<div class="artwork6">
-							<img src="assets/6.jpg" alt="фото">
-						</div>
+					<div class="d-vidjet">
+						<button class="save-btn js--save-btn">
+							<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M12 4.43498C10.011 -0.964017 0 -0.162016 0 8.00298C0 12.071 3.06 17.484 12 23C20.94 17.484 24 12.071 24 8.00298C24 -0.115016 14 -0.996017 12 4.43498Z" fill="white"/>
+							</svg>
+						</button>
 					</div>
 				</div>
-				<div class="art-item">
-					<div class="art-body">
-						<div class="art-wrapper">
-							<div class="art-column-1">
-								<div class="artwork1">
-										<img src="assets/1.jpg" alt="фото">
-								</div>
-								<div class="artwork4">
-										<img src="assets/4.jpg" alt="фото">
-								</div>
-							</div>
-							<div class="art-column-2">
-								<div class="artwork2">
-										<img src="assets/2.jpg" alt="фото">
-								</div>
-								<div class="artworks3">
-									<img src="assets/3.jpg" alt="фото">
-								</div>
-								<div class="artwork5">
-										<img src="assets/5.jpg" alt="фото">
-								</div>
-							</div>
-						</div>
-						<div class="artwork6">
-							<img src="assets/6.jpg" alt="фото">
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="art-slider-list" data-item="3">
-				<div class="art-item">
-					<div class="art-body">
-						<div class="art-wrapper">
-							<div class="art-column-1">
-								<div class="artwork1">
-										<img src="assets/1.jpg" alt="фото">
-								</div>
-								<div class="artwork4">
-										<img src="assets/4.jpg" alt="фото">
-								</div>
-							</div>
-							<div class="art-column-2">
-								<div class="artwork2">
-										<img src="assets/2.jpg" alt="фото">
-								</div>
-								<div class="artworks3">
-									<img src="assets/3.jpg" alt="фото">
-								</div>
-								<div class="artwork5">
-										<img src="assets/5.jpg" alt="фото">
-								</div>
-							</div>
-						</div>
-						<div class="artwork6">
-							<img src="assets/6.jpg" alt="фото">
-						</div>
-					</div>
-				</div>
-				<div class="art-item">
-					<div class="art-body">
-						<div class="art-wrapper">
-							<div class="art-column-1">
-								<div class="artwork1">
-										<img src="assets/1.jpg" alt="фото">
-								</div>
-								<div class="artwork4">
-										<img src="assets/4.jpg" alt="фото">
-								</div>
-							</div>
-							<div class="art-column-2">
-								<div class="artwork2">
-										<img src="assets/2.jpg" alt="фото">
-								</div>
-								<div class="artworks3">
-									<img src="assets/3.jpg" alt="фото">
-								</div>
-								<div class="artwork5">
-										<img src="assets/5.jpg" alt="фото">
-								</div>
-							</div>
-						</div>
-						<div class="artwork6">
-							<img src="assets/6.jpg" alt="фото">
-						</div>
-					</div>
-				</div>
-				<div class="art-item">
-					<div class="art-body">
-						<div class="art-wrapper">
-							<div class="art-column-1">
-								<div class="artwork1">
-										<img src="assets/1.jpg" alt="фото">
-								</div>
-								<div class="artwork4">
-										<img src="assets/4.jpg" alt="фото">
-								</div>
-							</div>
-							<div class="art-column-2">
-								<div class="artwork2">
-										<img src="assets/2.jpg" alt="фото">
-								</div>
-								<div class="artworks3">
-									<img src="assets/3.jpg" alt="фото">
-								</div>
-								<div class="artwork5">
-										<img src="assets/5.jpg" alt="фото">
-								</div>
-							</div>
-						</div>
-						<div class="artwork6">
-							<img src="assets/6.jpg" alt="фото">
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="two">
-				<div class="workspace">
-						Work space
-				</div>
-				<div class="frame">
-						<div class="hello">
-								Hi, there! Drag something from left colum to careate your artwork  
-						</div>
-				</div>
-		</div>
-		<div class="three">
-			<div class="text-container">
-				<div class="info">
-					Info
-				</div>
-				<div class="infotext">
-					Modernism era started with the last two decades of the nineteenth century as a result of enlightening and radical change in the commercial industry. As the ideological movement it originated with the rejection of all the previously stated beliefs about traditional forms of art, literature, religious faith, philosophy, and social organization. By the 1970s the ‘modern era was drawing to close’ because it was ‘no longer relevant in an immerging postindustrial society’ and due to emerging of new era of postmodernism in history of art. (Meggs, 1998)
-					However, the modernists’ approach to work hasn’t been ignored by the practitioners of the field completely. Moreover, according to “The Cambridge Companion to Modernism” the “understanding of a major cultural episode” has been changing and updating over the recent years with the accruing of ‘more ambitious acts of contextualization’. Nowadays, we might have more Modernism, as well as more flexible way to understanding and interpreting it. Thus, the overarching theory I wanted to put forward in this work is the idea of how the modernism approach is still used in various projects, for instance, the web design and UX design practices.
-					
-					For better understanding of the above stated thesis it is relevant to look more deeply into the origins of Modernism. Modernism is an ideological art movement that has appeared in the late 19th century with the skyrocketing technological progress and development of the ‘‘enlightenment period’’. Modernism corresponds to “enlightenment” concept in English. Modern word based on 
-				</div>
-			</div>
 		</div>
 	</div>
 	<script src="jquery-3.3.1.min.js"></script>
+	<script src="html2canvas.js"></script>
+	<script src="canvas2image.js"></script>
+	<script src="jquery-ui.min.js"></script>
 	<script src="slick.min.js"></script>
 	<script src="script.js"></script>
 	<script src="main.js"></script>
