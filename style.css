@@ -10,14 +10,104 @@ body{
 }
 * {
   overflow: visible;
+  font-family: 'Ubuntu';
 }
+
+@font-face {
+    font-family: 'Ubuntu';
+    src: url('Ubuntu-Regular.eot');
+    src: local('Ubuntu Regular'), local('Ubuntu-Regular'),
+        url('Ubuntu-Regular.eot?#iefix') format('embedded-opentype'),
+        url('Ubuntu-Regular.woff') format('woff'),
+        url('Ubuntu-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Ubuntu';
+    src: url('Ubuntu-Light.eot');
+    src: local('Ubuntu Light'), local('Ubuntu-Light'),
+        url('Ubuntu-Light.eot?#iefix') format('embedded-opentype'),
+        url('Ubuntu-Light.woff') format('woff'),
+        url('Ubuntu-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Ubuntu';
+    src: url('Ubuntu-LightItalic.eot');
+    src: local('Ubuntu Light Italic'), local('Ubuntu-LightItalic'),
+        url('Ubuntu-LightItalic.eot?#iefix') format('embedded-opentype'),
+        url('Ubuntu-LightItalic.woff') format('woff'),
+        url('Ubuntu-LightItalic.ttf') format('truetype');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Ubuntu';
+    src: url('Ubuntu-Medium.eot');
+    src: local('Ubuntu Medium'), local('Ubuntu-Medium'),
+        url('Ubuntu-Medium.eot?#iefix') format('embedded-opentype'),
+        url('Ubuntu-Medium.woff') format('woff'),
+        url('Ubuntu-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Ubuntu';
+    src: url('Ubuntu-Italic.eot');
+    src: local('Ubuntu Italic'), local('Ubuntu-Italic'),
+        url('Ubuntu-Italic.eot?#iefix') format('embedded-opentype'),
+        url('Ubuntu-Italic.woff') format('woff'),
+        url('Ubuntu-Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Ubuntu';
+    src: url('Ubuntu-Bold.eot');
+    src: local('Ubuntu Bold'), local('Ubuntu-Bold'),
+        url('Ubuntu-Bold.eot?#iefix') format('embedded-opentype'),
+        url('Ubuntu-Bold.woff') format('woff'),
+        url('Ubuntu-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Ubuntu';
+    src: url('Ubuntu-BoldItalic.eot');
+    src: local('Ubuntu Bold Italic'), local('Ubuntu-BoldItalic'),
+        url('Ubuntu-BoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('Ubuntu-BoldItalic.woff') format('woff'),
+        url('Ubuntu-BoldItalic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Ubuntu';
+    src: url('Ubuntu-MediumItalic.eot');
+    src: local('Ubuntu Medium Italic'), local('Ubuntu-MediumItalic'),
+        url('Ubuntu-MediumItalic.eot?#iefix') format('embedded-opentype'),
+        url('Ubuntu-MediumItalic.woff') format('woff'),
+        url('Ubuntu-MediumItalic.ttf') format('truetype');
+    font-weight: 500;
+    font-style: italic;
+}
+
 
 ::-webkit-scrollbar { width: 5px; height: 5px;}
 ::-webkit-scrollbar-button {  background-color: #666; }
 ::-webkit-scrollbar-track {  background-color: #999;}
 ::-webkit-scrollbar-track-piece { background: 666;}
 ::-webkit-scrollbar-thumb { height: 30px; background-color: #fafafa; border-radius: 5px;}
-::-webkit-scrollbar-corner { background-color: #999;}
+::-webkit-scrollbar-corner { background-color: #999;}}
 ::-webkit-resizer { background-color: #666;}
 
 .header {
@@ -131,7 +221,6 @@ body{
 .toolbar {
   width: 26%;
   margin-left: 70px;
-  font-family: Gotham Pro;
   font-style: normal;
   font-weight: 500;
   font-size: 18px;
@@ -140,7 +229,6 @@ body{
 }
 .workspace {
   width: 50%;
-  font-family: Gotham Pro;
   font-style: normal;
   font-weight: 500;
   font-size: 18px;
@@ -149,7 +237,6 @@ body{
   color: #ffffff;
 }
 .info {
-  font-family: Gotham Pro;
   font-style: normal;
   font-weight: 500;
   font-size: 18px;
@@ -158,11 +245,16 @@ body{
 }
 
 .line-text {
+  transition: all .3s ease;
   font-weight: 500;
   font-size: 18px;
   line-height: 17px;
   text-align: center;
   color: #ffffff;
+}
+.line-text:hover {
+  text-shadow: 2px 2px 2px #000;
+
 }
 
 .dropdown {
@@ -170,7 +262,6 @@ body{
     height: 37px;
     margin-left: 50px;
     margin-top: 30px;
-    font-family: Arial, Helvetica, sans-serif;
     font-size: 14px;
     line-height: 16px;
     border-radius: 0%;
@@ -185,6 +276,13 @@ body{
   border: 1px solid black;
   font-size: 14px;
   line-height: 16px;
+}
+.draggable {
+  transition: all .3s ease;
+}
+
+.draggable:hover {
+  transform: scale(1.03);
 }
 .artwork1{
   margin-bottom: 17px;
@@ -216,7 +314,6 @@ body{
  font-size: 12px;
  line-height: 145.4%;
  text-align: center;
- font-family: Gotham Pro;
  letter-spacing: 0.02em;
  color: #FFFFFF;
 }
@@ -334,7 +431,6 @@ body{
 }
 
 .intention {
-  font-family: Ubuntu;
   font-style: normal;
   font-weight: 500;
   font-size: 28px;
@@ -344,7 +440,6 @@ body{
 }
 
 .game {
-  font-family: Ubuntu;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
@@ -354,7 +449,6 @@ body{
 }
 
 .freedom {
-  font-family: Ubuntu;
   font-style: normal;
   font-weight: 500;
   font-size: 21px;
@@ -405,7 +499,6 @@ body{
 
 .intention {
   font-style: normal;
-  font-family: Arial, Helvetica, sans-serif;
   font-weight: 500;
   font-size: 28px;
   line-height: 32px; 
@@ -415,7 +508,6 @@ body{
 
 .game{
   font-style: normal;
-  font-family: Arial, Helvetica, sans-serif;
   font-weight: 500;
   font-size: 21 px;
   line-height: 18px;
@@ -428,8 +520,6 @@ body{
   height: 20px;
   left: 255px;
   top: 197px;
-  
-  font-family: Arial, Helvetica, sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 21px;
@@ -440,8 +530,6 @@ body{
 .action {
  padding-right: 200px;
  padding-top: 40px;
-  
-  font-family: Arial, Helvetica, sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 36px;
@@ -453,10 +541,6 @@ body{
   transform: rotate(6.34deg);
 }
 .reasoning  {
-
-  
-  
-  font-family: Arial, Helvetica, sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 24px;
@@ -530,7 +614,6 @@ body{
   justify-content: center;
   -ms-align-items: center;
   align-items: center;
-  font-family: Gotham Pro;
   font-style: normal;
   font-weight: 500;
   font-size: 27px;
